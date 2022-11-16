@@ -1,11 +1,21 @@
 
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
 
-function ChangeView({ center }) {
-    const map = useMap();
-    map.setView(center);
-    return null;
-  }
+import icon from '../../assets/images/icon-location.svg'
+
+    function ChangeView({ center }) {
+        const map = useMap();
+        map.setView(center);
+        return null;
+    }
+
+    let DefaultIcon = L.icon({
+    iconUrl: icon,
+    });
+
+    L.Marker.prototype.options.icon = DefaultIcon;
 
 
 const Map = ({position}) => {

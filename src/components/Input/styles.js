@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 6rem;
     top: 10rem;
     text-align: center;
     border-radius: 2rem;
-    background-color: purple;
     position: absolute;
     z-index: 2;
     overflow: hidden;
@@ -21,7 +19,7 @@ export const InputText = styled.input.attrs(props => ({
     type: "text"
 }))`
     height: 6rem;
-    width: 56rem;
+    width: 46rem;
     border-radius: 2rem;
     font-family: inherit;
     border: none;
@@ -34,6 +32,18 @@ export const InputText = styled.input.attrs(props => ({
     &:focus-visible{
         outline: none;
     }
+
+    @media(max-width: 56.25em){
+    width: 42rem;
+    height: 5rem;
+    }
+
+    @media((max-width: 37.5em)){
+        width: 28rem;
+        height: 4rem;
+        padding-left: 1rem;
+        font-size: 1.2rem;
+    }
 `
 
 export const InputButton = styled.button`
@@ -45,5 +55,15 @@ export const InputButton = styled.button`
 
     &:hover{
         cursor: pointer;
+    }
+
+    @media(max-width: 56.25em){
+        width: 5.4rem;
+        height: 6rem;
+    }
+
+    @media((max-width: 37.5em)){
+        width: 4.4rem;
+        height: 4.2rem;
     }
 `
