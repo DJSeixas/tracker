@@ -21,7 +21,7 @@ import icon from '../../assets/images/icon-location.svg'
 const Map = ({position}) => {
 
     return(
-    <MapContainer center={position} zoom={13} scrollWheelZoom={true}>
+    <MapContainer center={position} zoom={13} scrollWheelZoom={true} style={{ height: "100vh" }}>
         <ChangeView center={position} />
         <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

@@ -41,18 +41,9 @@ code {
 }
 
 .leaflet-container{
-  height: 70vh;
   width: 100%;
   position: relative;
   z-index: 1;
-
-  img {
-    max-height: 100%;
-}
-
-.my-leaflet-map-container img {
-    max-height: none;
-}
 
 }
 
