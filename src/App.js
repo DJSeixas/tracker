@@ -52,6 +52,7 @@ function App() {
 
   useEffect(() => {
         getInfoByIp(info)
+  // eslint-disable-next-line
   },[info])
 
 
