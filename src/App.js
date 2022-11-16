@@ -28,7 +28,6 @@ function App() {
       setTimezone(response.data.location.timezone)
       setLat(response.data.location.lat)
       setLng(response.data.location.lng)
-      return console.log(response.data)
   }
 
   const [searchValue, setSearchValue] = useState('')
@@ -52,7 +51,7 @@ function App() {
 
   useEffect(() => {
         getInfoByIp(info)
-  // eslint-disable-next-line
+//eslint-disable-next-line
   },[info])
 
 

@@ -7,7 +7,7 @@ const apiClient = axios.create({
     }
 })
 
-// eslint-disable-next-line import/no-anonymous-default-export
+// eslint-disable-next-line
 export default{
     getInfoByIp(info){
         return apiClient.get(`country,city?apiKey=at_iv0QH7AW04fSOzKL3j42ujVFunPpX&domain=${info}`)
