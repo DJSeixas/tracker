@@ -18,7 +18,7 @@ function App() {
     const [lat, setLat] = useState('')
     const [lng, setLng] = useState('')
 
-    const [info, setInfo] = useState('8.8.8.8')
+    const [info, setInfo] = useState('')
 
     async function getInfoByIp(){
       const response = await services.getInfoByIp(info)
